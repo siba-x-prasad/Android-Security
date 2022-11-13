@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_10dp"
+    tools:context=".hashing.HashingExampleActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to hash"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine1"
+        android:layout_width="@dimen/dimen_1dp"
+        android:layout_height="@dimen/dimen_1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMd5"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:text="MD5  \n Hashing"
+        app:layout_constraintEnd_toStartOf="@+id/guideLine1"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextPassword" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSha256"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="SHA - 256 \n Hashing"
+        app:layout_constraintEnd_toStartOf="@+id/guideLine2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@+id/edittextPassword" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine2"
+        android:layout_width="@dimen/dimen_1dp"
+        android:layout_height="@dimen/dimen_1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSha1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="SHA 1  \n Hashing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideLine2"
+        app:layout_constraintTop_toBottomOf="@+id/edittextPassword" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMd5"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:gravity="center"
+        android:text="MD5  \n Hashing"
+        app:layout_constraintEnd_toStartOf="@+id/guideLine1"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMd5" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSha256"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:gravity="center"
+        android:text="SHA - 256 \n Hashing"
+        app:layout_constraintEnd_toStartOf="@+id/guideLine2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideLine1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSha256" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSha1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:gravity="center"
+        android:text="SHA 1  \n Hashing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideLine2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSha1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

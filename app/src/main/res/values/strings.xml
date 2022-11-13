@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AndroidSecurity</string>
+    <string name="enter_text_to_write_file">Enter text to write to file</string>
+    <string name="write_to_file">Write to File</string>
+    <string name="view">View</string>
+</resources>
